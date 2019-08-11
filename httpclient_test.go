@@ -1,4 +1,4 @@
-package remotehttp
+package httpclient
 
 import (
 	"fmt"

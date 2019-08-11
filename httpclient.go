@@ -1,4 +1,4 @@
-package remotehttp
+package httpclient
 
 import (
 	"bytes"
@@ -37,9 +37,9 @@ func DefaultClient() *HTTPClient {
 	}
 }
 
-// Create an HTTPClient with a user-provided net/http.Client
+// NewClient Create an HTTPClient with a user-provided net/http.Client
 func NewClient(httpClient *http.Client) *HTTPClient {
-	return &HTTPClient{ Client: httpClient }
+	return &HTTPClient{Client: httpClient}
 }
 
 // SetBasicAuth is a chaining function to set the username and password for basic
